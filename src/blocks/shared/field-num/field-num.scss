@@ -1,0 +1,69 @@
+.field-num {
+  //width: 105px;
+}
+
+.field-num__wrap {
+  display: flex;
+}
+
+.field-num__btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  //border: none;
+  //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.03);
+  border: 1px solid $black;
+  border-radius: 50px;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.field-num__number {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  width: 35px;
+  margin: 0 5px;
+  border: none;
+  background: transparent;
+  color: #333333;
+}
+
+.field-num__btn--minus {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 1px;
+    background: $black;
+  }
+}
+
+.field-num__btn--plus {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 8px;
+    height: 1px;
+    background: $black;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 10px;
+    height: 1px;
+    background: $black;
+  }
+}

@@ -1,0 +1,24 @@
+.size-guide__head {
+  font-size: 12px;
+  line-height: 2;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 12px;
+}
+
+.size-guide__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.size-guide__link {
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

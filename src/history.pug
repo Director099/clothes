@@ -1,0 +1,12 @@
+extends pug/layout.pug
+
+block meta
+  title= pages.history.text
+
+block content
+  +history
+    +advantages
+      +pagination('gap')
+        +pagination-item("ORIGIN", '#').btn.btn--gold
+        +pagination-item("EVOLUTION", '#').btn.btn--gold
+        +pagination-item("ROOTS AND WINGS").btn.btn--gold

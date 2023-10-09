@@ -1,0 +1,37 @@
+-
+  const listMenu = [
+    {
+      text: 'COLLECTIONS',
+      href: '#collections'
+    },
+    {
+      text: 'E-BOUTIQUE',
+      href: '#e-boutique'
+    },
+    {
+      text: 'MANUFACTURING',
+      href: '#manufacturing'
+    },
+    {
+      text: 'History',
+      href: '#preview'
+    },
+    {
+      text: 'recommended',
+      href: '#recommended'
+    },
+    {
+      text: 'SHOWROOM & SHOPS',
+      href: '#shop'
+    },
+  ]
+
+  const hasPageMain = (main, link) => !!main ? link : `${pages.index.href}${link}`;
+
+mixin sidebar-menu(main)
+  aside.sidebar-menu&attributes(attributes)#sidebar-menu
+    nav.sidebar-menu__nav
+      ul.sidebar-menu__list
+        each item in listMenu
+          li.sidebar-menu__item
+            a.sidebar-menu__link(href=hasPageMain(main, item.href) data-smooth-scroll=!!main)= item.text

@@ -1,0 +1,62 @@
+mixin productHeaderContent(main)
+  header.product-card__header-content&attributes(attributes)
+    if(main)
+      h1.product-card__title GUS35 A18MA01 R31
+    else
+      h2.product-card__title GUS35 A18MA01 R31
+    +price("4.600,00 ₽").product-card__price
+    +badge("SOLD OUT")
+
+mixin product-card
+  .product-card
+    .container.container--ident.container--fluid
+      +breadcrumbs().product-card__breadcrumbs.d-none.d-md-flex
+        +breadcrumbs-item('Главная', 'index.html')
+        +breadcrumbs-item('Каталог', pages.catalog.href)
+        +breadcrumbs-item(pages.product.text)
+      .stack.product-card__stack
+        .grid-tpl-md-12.product-card__gap
+          .grid-tpl-col-md-6
+            +productHeaderContent.d-md-none
+            +product-gallery
+          .grid-tpl-col-md-6
+            .stack.product-card__stack-content
+              +productHeaderContent(main).d-none.d-md-flex
+              .product-card__desc
+                p Jacket single breasted 3 buttons, gray and blue prince de galles, hand made in our Casalnuovo factory by our master tailors. Made of refined wool completely unstructured, our tailorshop's iconic model is perfect for the modern man looking for a more sophisticated style. 2 patched pockets and 1 chest pocket "boat style", unlined, sleeves manica camicia, double vents.
+              .product-card__info
+                +size-guide.product-card__guide
+                +share
+              .stack.product-card__stack-selected
+                +field-select({
+                  title: 'Size Trousers:',
+                  attrs: {
+                    name: 'size-trousers',
+                  },
+                  options: [
+                    {
+                      title: '51',
+                    },
+                    {
+                      title: '52',
+                    },
+                  ],
+                }).field-select--text-input
+                +field-select({
+                  title: 'Size Suit:',
+                  attrs: {
+                    name: 'size-suit',
+                  },
+                  options: [
+                    {
+                      title: '51',
+                    },
+                    {
+                      title: '52',
+                    },
+                  ],
+                }).field-select--text-input
+                a.btn.btn--gold(href="#modal-buy-product" data-fancybox="") Добавить в корзину
+        .text-center
+          a.btn(href=pages.catalog.href) back to catalog
+        +recommended('Recommended products')

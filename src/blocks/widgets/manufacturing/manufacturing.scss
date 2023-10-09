@@ -1,0 +1,43 @@
+.manufacturing {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.manufacturing__preview {
+  color: $white;
+}
+
+.manufacturing__list-prev {
+  color: $white;
+
+  .shadow-box {
+    padding: 40px;
+    background-color: rgba(152, 127, 64, 0.95);
+  }
+}
+
+.manufacturing__main-title {
+  margin-bottom: 50px;
+}
+
+.manufacturing__gap {
+  gap: 30px;
+}
+
+.manufacturing__stack {
+  gap: 70px;
+}
+
+.manufacturing__m-15 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.manufacturing__form {
+  text-align: left;
+  text-transform: uppercase;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}

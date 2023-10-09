@@ -1,0 +1,7 @@
+mixin page-header()
+  header.page-header
+    .page-header__menu
+      +burger('Меню')(href="#sidebar-menu", data-fancybox="").page-header__burger
+    .page-header__grow
+      +logo(pages.index.href).page-header__logo
+        img(src='img/content/logo_ustyugov_bl.svg', alt='Logo', width='140', height='70')

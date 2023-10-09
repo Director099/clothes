@@ -1,0 +1,16 @@
+mixin product-gallery()
+  .product-gallery&attributes(attributes)
+    .product-gallery__row-slider
+      .swiper-button-prev.swiper-button-arrow.d-none.d-md-block
+      .swiper.product-gallery__slider(data-gallery-top="")
+        .swiper-wrapper
+          - for(let i = 1; i <= 6; i++)
+            .swiper-slide
+              a.product-gallery__item(href=`img/content/photo-gallery/photo-gallery-${i}.webp` data-fancybox="gallery")
+                img(src=`img/content/photo-gallery/photo-gallery-${i}.webp` alt="AUS30_PUZ3_A12WA05_M38  ")
+      .swiper-button-next.swiper-button-arrow.d-none.d-md-block
+    .product-gallery__thumbs.d-none.d-md-flex
+      - for(let i = 1; i <= 6; i++)
+        .product-gallery__thumbs-item(data-gallery-thumbs=i - 1)
+          img(src=`img/content/photo-gallery/photo-gallery-${i}.webp` alt="AUS30_PUZ3_A12WA05_M38")
+    .swiper-pagination.d-md-none.product-gallery__pagination

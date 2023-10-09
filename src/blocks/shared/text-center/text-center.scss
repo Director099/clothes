@@ -1,0 +1,22 @@
+.text-center {
+  text-align: center;
+}
+
+.text-center-md {
+  @media (min-width: $screen-md) {
+    text-align: center;
+  }
+}
+
+.text-center-lg {
+  @media (min-width: $screen-lg) {
+    text-align: center;
+  }
+}
+
+.text-center-xl {
+  @media (min-width: $screen-xl) {
+    text-align: center;
+  }
+}
+

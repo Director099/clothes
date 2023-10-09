@@ -1,0 +1,14 @@
+.stack {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.stack--main-gap {
+  gap: 50px;
+}
+
+.stack--form {
+  gap: 20px;
+}

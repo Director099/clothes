@@ -1,0 +1,17 @@
+-
+  const listAdv = [
+    "The tireless pursuit of excellence means that Massimiliano and Giuseppe personally select the best fabrics around. The choice mainly falls to Scottish, English, Irish and Italian yarns, from the highest quality wools to the purest cashmeres. But that’s not all. The shades and designs are made exclusively on their indication, so that the distinctive style of the Neapolitan fashion house is constantly refreshed. “In our work – emphasises Massimiliano Attolini – the essential guide is above all the quality of the fabrics and the cut. On closer inspection, perhaps, the secret is succeeding with simplicity and ease in the very difficult work of blending tradition and modernity. The result of this synthesis is that balance and harmony that you feel every time you wear one of our garments.”",
+    "More than 25 years after the inauguration of the new workshop, Cesare Attolini is a tailor’s shop that is very Italian and international at the same time, with garments that are exclusively “handmade” produced in its workshops. A hotbed of style, turned to by men from all over the world wanting to ensure the character of their elegance remains exclusive. A workshop of timeless elegance, where creativity and wisdom come together in a union that is prodigious to say the least. A place where the word luxury is a verb, an active word, alive, not meaning ostentation but rather a unique, intense, discreet experience based on shared values. Significant customisation in particular. The real perception of being able to turn to this place to satisfy your desire to own an object that has been designed with you and made just for you.",
+    "“One of the greatest satisfactions is to see fathers accompanying their sons to be measured for a suit, the latter, in turn, then becoming loyal customers, also a sign of the fact that the company knows how to interpret the present,” comments Giuseppe Attolini, satisfied but never complacent."
+  ]
+
+mixin advantages
+  .advantages
+    .advantages__wrap
+      each item, i in listAdv
+        .grid-tpl-lg-2.advantages__grid
+          .advantages__img
+            img(src=`img/content/adv-${i + 1}.webp` alt="Преймущество")
+          .advantages__content
+            p= item
+    block

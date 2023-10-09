@@ -1,0 +1,10 @@
+mixin gallery
+  .gallery
+    h1.gallery__title= pages.fallWinter.text
+    ul.gallery__list.text-center
+      - for (let i = 1; i < 16; i++)
+        li.gallery__item
+          img(src=`img/content/gallery-${i}.webp` alt="Галерея")
+    +pagination('gap').gallery__pagination
+      +pagination-item("Назад", '#').btn.btn--gold
+      +pagination-item("Далее", '#').btn.btn--gold

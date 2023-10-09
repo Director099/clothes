@@ -1,0 +1,41 @@
+-
+  const formVacancies = [
+    formFilelds.name,
+    formFilelds.phone,
+    formFilelds.email,
+  ]
+
+mixin modal-buy-product
+  +modal('modal-buy-product', "Ваш заказ:").modal-buy-product
+    .modal__body.modal-buy-product__body
+      .modal-buy-product__list-prod
+        - for (let i = 0; i < 2; i++)
+          +product-prev({
+            title: "GUS35 A18MA01 R31",
+            img: "img/content/photo-gallery/photo-gallery-1.webp"
+          }).modal-buy-product__product
+      p.modal-buy-product__total Сумма:
+        +price("35 900 ₽")
+      +form(action="404.html" method="POST" data-form).stack.stack--form
+        each item in formVacancies
+          - const fieldEmail = item.attrs.type === 'email';
+          +field-text({
+            title: fieldEmail ? 'Мы оповестим Вас о поступлении новых коллекций' : item.title,
+            isTextarea: item.isTextarea,
+            attrs: {
+              placeholder: fieldEmail ? 'Email (не обязательно)' : item.attrs.placeholder,
+              required: !fieldEmail && true,
+              type: item.attrs.type ? item.attrs.type : 'text',
+              minlength: item.attrs.minlength,
+              min: item.attrs.min,
+              pattern: item.attrs.pattern,
+              'data-pristine-required-message': " ",
+              'data-pristine-minlength-message': item.attrs['data-pristine-minlength-message'],
+              'data-pristine-min-message': item.attrs['data-pristine-min-message'],
+              'data-pristine-pattern-message': item.attrs['data-pristine-pattern-message'],
+              "data-number-only": item.attrs['data-number-only'],
+              "data-pristine-email-message": item.attrs["data-pristine-email-message"]
+            }
+          })
+        button.btn.btn--bg-gold(disabled, data-form-btn) ОФОРМИТЬ ЗАКАЗ
+

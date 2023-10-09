@@ -1,0 +1,15 @@
+mixin shop({img, title, address})
+  .shop&attributes(attributes)
+    .shop__img
+      img(src=`img/content/shops-${img}.webp`, alt=title)
+    .shop__content
+      section.shop__content-wrap
+        span.shop__tag Shop
+        h3.shop__title= title
+        ul.shop__address
+          li.shop__item
+            p.shop__link= address
+          li.shop__item
+            a.shop__link(href=numberPhone.href)= numberPhone.text
+          li.shop__item
+            a.shop__link(href=post.href)= post.text

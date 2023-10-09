@@ -1,0 +1,9 @@
+.collection__gap {
+  gap: 30px
+}
+
+.collection__col-gap {
+  @media (min-width: $screen-md) {
+    gap: 40px;
+  }
+}

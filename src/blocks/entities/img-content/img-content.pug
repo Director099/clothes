@@ -1,0 +1,11 @@
+mixin img-content({title, img, desc, href, classNameBox, classBtn, btnText="discover more"})
+  .img-content&attributes(attributes)
+    a.img-content__link(href=href)
+      img(src=`img/content/content-${img}.webp` alt=title)
+    +shadow-box({
+      title,
+      desc,
+      btnText,
+      href,
+      classBtn
+    })(class=classNameBox).img-content__box

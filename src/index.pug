@@ -1,0 +1,36 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+
+block var
+  - const pageMain = "page__content--pt-none";
+
+block content
+  .stack.stack--main-gap
+    +img-content({
+      img: 1,
+      desc: 'Fall Winter 2023-24 <br> Timeless Frames.',
+      title: 'NEW COLLECTION',
+      href: pages.fallWinter.href,
+      classNameBox: 'shadow-box--gray',
+      classBtn: 'btn--warning',
+      btnText: 'Наши последние работы'
+    })#collections
+    +collection#e-boutique
+    +img-content({
+      img: 3,
+      title: 'MANUFACTURING',
+      desc: 'How a Cesare Attolini suit is born.',
+      href: pages.manufacturing.href,
+      classNameBox: 'shadow-box--dark',
+      btnText: 'На заказ',
+    })#manufacturing
+    +preview({
+      src: "img/content/content-4.webp",
+      title: "Attolini is a synonym of Naples’ tailoring tradition all around the world.",
+      desc: 'In the past as nowadays, three generations since 1930, it forges exclusive elegance and craftsmanship. Uncompromised expression of an absolute quality, unique culture based on knowhow, untimely personalization and charm. ',
+      href: pages.history.href,
+    })#preview
+    +recommended('Новинки')#recommended
+    +shops

@@ -1,0 +1,39 @@
+.history__title {
+  padding-bottom: 52.5px;
+  margin-bottom: 62.5px;
+
+  &::after {
+    width: 150px;
+  }
+}
+
+.history__stack-gap {
+  gap: 80px;
+}
+
+.history__width {
+  padding: 0 30px;
+}
+
+.history__content {
+  h2,
+  h3 {
+    font-family: $font-family-Bodoni;
+    font-size: 34px;
+    font-weight: 400;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &--xl-center {
+    @media (min-width: $screen-xl) {
+      text-align: center;
+    }
+  }
+}
+
+.history__gap {
+  gap: 30px;
+}

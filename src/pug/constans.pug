@@ -1,0 +1,81 @@
+-
+  const numberPhone = {
+    href: 'tel:88005504448',
+    text: '+7 800 550 44 48'
+  }
+
+  const post = {
+    href: 'mailto:shopnewyork@cesareattolini.com',
+    text: 'shopnewyork@cesareattolini.com'
+  }
+
+  const media = {
+    md: 768,
+    lg: 1080,
+    xl: 1430,
+  }
+
+  const pages = {
+    404: {
+      text: '404',
+      href: '404.html',
+    },
+    index: {
+      text: 'Главная',
+      href: 'index.html'
+    },
+    fallWinter: {
+      text: 'Collections FW 2023/24',
+      href: 'fall-winter.html'
+    },
+    history: {
+      text: 'ROOTS AND WINGS',
+      href: 'history.html'
+    },
+    manufacturing: {
+      text: 'PROCESSING',
+      href: 'manufacturing.html'
+    },
+    product: {
+      text: 'GUS35 A18MA01 R31',
+      href: 'product.html'
+    },
+    catalog: {
+      text: 'Каталог',
+      href: 'catalog.html'
+    }
+  }
+
+  const formFilelds = {
+    name: {
+      title: 'Введите Ваше имя',
+      attrs: {
+        placeholder: 'Введите Ваше имя',
+        type: "text",
+      }
+    },
+    phone: {
+      title: 'Номер телефона',
+      attrs: {
+        placeholder: "Ваш телефон",
+        type: 'tel',
+        pattern: `/(\\+7|8)[\\s(]*\\d{3}[)\\s][\\s]\\d{3}[\\s]\\d{2}[\\s]\\d{2}/i`,
+        "data-pristine-pattern-message": " "
+      }
+    },
+    email: {
+      title: 'Введите Ваше email',
+      attrs: {
+        placeholder: "Email",
+        type: "email",
+        "data-pristine-email-message": " "
+      }
+    },
+    textarea: {
+      isTextarea: true,
+      title: 'Ваше сообщение:',
+      attrs: {
+        placeholder: "Ваше сообщение:",
+      }
+    },
+  }

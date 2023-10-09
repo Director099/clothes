@@ -1,0 +1,17 @@
+mixin product-prev({title, img})
+  .product-prev
+    .product-prev__img
+      img(src=img alt=title)
+    .product-prev__row
+      section.product-prev__desc
+        h3.product-prev__title= title
+        .product-prev__char
+          p Цвет: Золото
+          p Размер: S
+      .product-prev__count
+        +field-num
+      .product-prev__price
+        +price("4.600,00 ₽").product-prev__price-text
+    button.product-prev__delete(type="button")
+      svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" tabindex="-1" width="16" height="16")
+        path(d="M20 20L4 4m16 0L4 20")

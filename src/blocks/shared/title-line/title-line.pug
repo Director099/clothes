@@ -1,0 +1,5 @@
+mixin title-line(title, main=false)
+  if(main)
+    h1.title-line&attributes(attributes)= title
+  else
+    h2.title-line&attributes(attributes)= title

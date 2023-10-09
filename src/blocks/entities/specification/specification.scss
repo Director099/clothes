@@ -1,0 +1,9 @@
+.specification {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specification__content {
+  line-height: 24px;
+}

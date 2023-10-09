@@ -1,0 +1,81 @@
+// Style plagin
+@import "variables";
+
+// My style
+
+@import "grid-mixins";
+
+@import "functions";
+
+@import "fonts";
+@import "global";
+
+@import "../blocks/shared/grid-tpl/grid-tpl";
+@import "../blocks/shared/page/page";
+@import "../blocks/shared/btn/btn";
+@import "../blocks/shared/container/container";
+@import "../blocks/shared/burger/burger";
+@import "../blocks/shared/stack/stack";
+@import "../blocks/shared/order/order";
+@import "../blocks/shared/price/price";
+@import "../blocks/shared/pagination/pagination";
+@import "../blocks/shared/title-line/title-line";
+@import "../blocks/shared/text-center/text-center";
+@import "../blocks/shared/breadcrumbs/breadcrumbs";
+@import "../blocks/shared/display/display";
+@import "../blocks/shared/share/share";
+@import "../blocks/shared/badge/badge";
+@import "../blocks/shared/field-select/field-select";
+@import "../blocks/shared/modal/modal";
+@import "../blocks/shared/form/form";
+@import "../blocks/shared/field-text/field-text";
+@import "../blocks/shared/field-num/field-num";
+
+@import "../blocks/entities/page-header/page-header";
+@import "../blocks/entities/page-footer/page-footer";
+@import "../blocks/entities/img-content/img-content";
+@import "../blocks/entities/shadow-box/shadow-box";
+@import "../blocks/entities/collection/collection";
+@import "../blocks/entities/shop/shop";
+@import "../blocks/entities/product/product";
+@import "../blocks/entities/preview/preview";
+@import "../blocks/entities/advantages/advantages";
+@import "../blocks/entities/specification/specification";
+@import "../blocks/entities/product-gallery/product-gallery";
+@import "../blocks/entities/size-guide/size-guide";
+@import "../blocks/entities/product-prev/product-prev";
+
+@import "../blocks/entities/modal-buy-product/modal-buy-product";
+
+@import "../blocks/widgets/shops/shops";
+@import "../blocks/widgets/recommended/recommended";
+@import "../blocks/widgets/gallery/gallery";
+@import "../blocks/widgets/history/history";
+@import "../blocks/widgets/manufacturing/manufacturing";
+@import "../blocks/widgets/product-card/product-card";
+@import "../blocks/widgets/order-page/order-page";
+@import "../blocks/widgets/catalog/catalog";
+@import "../blocks/widgets/sidebar-menu/sidebar-menu";
+
+.swiper-button-arrow {
+  color: $black;
+  transition: $time;
+
+  &:hover {
+    color: rgba(152, 127, 64, 1);
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(152, 127, 64, 1);
+}
+
+.fancybox__content>.f-button.is-close-btn {
+  right: -10px;
+}

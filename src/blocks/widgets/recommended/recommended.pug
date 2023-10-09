@@ -1,0 +1,10 @@
+mixin recommended(title)
+  .recommended&attributes(attributes)
+    h2.recommended__title= title
+    .grid-tpl-lg-4.recommended__gap
+      each item, i in productList
+        +product({
+          title: item.title,
+          price: item.price,
+          img: i + 1,
+        })

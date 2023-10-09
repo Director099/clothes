@@ -1,0 +1,6 @@
+mixin product({img, title, price})
+  a.product&attributes(attributes)(href=pages.product.href)
+    .product__aspect-ratio
+      img(src=`img/content/product-${img}.webp`, alt=title)
+    h3.product__title= title
+    +price(price).product__price

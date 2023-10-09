@@ -1,0 +1,8 @@
+mixin shadow-box({title, desc, btnText="discover more", href, classBtn})
+  section.shadow-box&attributes(attributes)
+    if (title)
+      h2.shadow-box__title!= title
+    if (desc)
+      p.shadow-box__desc!= desc
+    if (!!btnText)
+      a.btn(href=href class=classBtn).shadow-box__btn= btnText

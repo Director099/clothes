@@ -1,0 +1,11 @@
+.catalog__product {
+  padding: 0;
+}
+
+.catalog__gap-products {
+  gap: 15px;
+
+  @media (min-width: $screen-md) {
+    gap: 25px;
+  }
+}

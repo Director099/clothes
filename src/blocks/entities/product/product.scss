@@ -1,0 +1,22 @@
+.product {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 20px;
+}
+
+.product__aspect-ratio {
+  margin-bottom: 20px;
+}
+
+.product__title {
+  font-size: 14px;
+  line-height: 22.4px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.product__price {
+  width: 100%;
+}

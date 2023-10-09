@@ -1,0 +1,28 @@
+.title-line {
+  position: relative;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 26px;
+  //padding-top: 10px;
+  padding-bottom: 22.5px;
+  margin-bottom: 32.5px;
+  color: rgba(152, 127, 64, 1);
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 170px;
+    height: 3px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/decor/title-line.webp");
+  }
+}

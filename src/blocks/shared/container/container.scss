@@ -1,0 +1,21 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1240px;
+
+  &--ident {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: $screen-md) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  &--fluid {
+    max-width: 100%;
+  }
+}
+

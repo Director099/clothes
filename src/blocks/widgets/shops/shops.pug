@@ -1,0 +1,20 @@
+-
+  const listShops = [
+    {
+      title: 'MILANO',
+      address: 'Via Bagutta, 14/16 Milano 20121'
+    },
+    {
+      title: 'NEW YORK',
+      address: '798 Madison Avenue New York NY 10065 USA'
+    }
+  ]
+
+mixin shops
+  each item, i in listShops
+    - const even = i % 2 === 0;
+    +shop({
+      title: item.title,
+      img: i + 1,
+      address: item.address
+    })(class=`${even ? 'shop--right-content' : 'shop--left-content'}` id= i && "shop")
