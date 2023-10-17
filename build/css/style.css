@@ -1829,6 +1829,12 @@ textarea.field-text__input {
 .delivery__img {
     width: 100%;
 }
+.delivery__desc p:last-child {
+    margin: 0;
+}
+.delivery__stack {
+    gap: 30px;
+}
 .swiper-button-arrow {
     color: hsl(0, 0%, 0%);
     transition: 0.3s;

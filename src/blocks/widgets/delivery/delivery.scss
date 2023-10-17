@@ -12,3 +12,13 @@
 .delivery__img {
   width: 100%;
 }
+
+.delivery__desc {
+  p:last-child {
+    margin: 0;
+  }
+}
+
+.delivery__stack {
+  gap: 30px;
+}

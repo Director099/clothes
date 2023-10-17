@@ -18,6 +18,6 @@ mixin shops
     +shop({
       subtitle: item.subtitle,
       title: item.title,
-      img: i + 1,
+      img: i === 0 ? `1.jpg` : '2.webp',
       address: item.address
     })(class=`${even ? 'shop--right-content' : 'shop--left-content'}` id= i && "shop")

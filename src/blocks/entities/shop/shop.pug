@@ -1,7 +1,7 @@
 mixin shop({img, title, address, subtitle})
   .shop&attributes(attributes)
     .shop__img
-      img(src=`img/content/shops-${img}.webp`, alt=title)
+      img(src=`img/content/shops-${img}`, alt=title)
     .shop__content
       section.shop__content-wrap
         span.shop__tag= subtitle
