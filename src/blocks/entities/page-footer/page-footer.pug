@@ -1,2 +1,30 @@
-mixin page-footer()
-  footer.page-footer footer
+-
+  const address = [
+    {
+      text: 'Чернышевского 97, Уфа',
+      icon: 'location'
+    },
+    {
+      href: 'mailto:ustjugov@inbox.com',
+      text: 'ustjugov@inbox.com',
+      icon: 'mail'
+    }
+  ]
+
+mixin page-footer(main)
+  footer.page-footer
+    .container.container--ident
+      .page-footer__top
+        .page-footer__row
+          +logo(pages.index.href).page-footer__logo
+            img(src='img/content/logo_ustyugov_bl.svg', alt='Logo', width='140', height='70')
+          +navigation(main).page-footer__grow
+          +socials
+      .page-footer__bottom
+        .page-footer__row-address
+          each item in address
+            a.page-footer__link(href=item.href)
+              svg(width="25" height="25")
+                use(href=`img/symbols.svg#icon-${item.icon}`)
+              = item.text
+

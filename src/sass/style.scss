@@ -30,6 +30,7 @@
 @import "../blocks/shared/form/form";
 @import "../blocks/shared/field-text/field-text";
 @import "../blocks/shared/field-num/field-num";
+@import "../blocks/shared/count/count";
 
 @import "../blocks/entities/page-header/page-header";
 @import "../blocks/entities/page-footer/page-footer";
@@ -44,6 +45,10 @@
 @import "../blocks/entities/product-gallery/product-gallery";
 @import "../blocks/entities/size-guide/size-guide";
 @import "../blocks/entities/product-prev/product-prev";
+@import "../blocks/entities/navigation/navigation";
+@import "../blocks/entities/socials/socials";
+@import "../blocks/entities/filter/filter";
+@import "../blocks/entities/basket/basket";
 
 @import "../blocks/entities/modal-buy-product/modal-buy-product";
 
@@ -56,6 +61,7 @@
 @import "../blocks/widgets/order-page/order-page";
 @import "../blocks/widgets/catalog/catalog";
 @import "../blocks/widgets/sidebar-menu/sidebar-menu";
+@import "../blocks/widgets/delivery/delivery";
 
 .swiper-button-arrow {
   color: $black;
@@ -78,4 +84,8 @@
 
 .fancybox__content>.f-button.is-close-btn {
   right: -10px;
+}
+
+.hide-scrollbar .basket {
+  display: none;
 }

@@ -1,0 +1,25 @@
+.filter {
+  background-color: $color-custom-danger;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.filter__list {
+  @include ul-none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: $white;
+  gap: 42px;
+}
+
+.filter__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &.active {
+    font-weight: 700;
+  }
+}

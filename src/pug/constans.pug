@@ -1,12 +1,12 @@
 -
   const numberPhone = {
-    href: 'tel:88005504448',
-    text: '+7 800 550 44 48'
+    href: 'tel:84952911907',
+    text: '+7 (495) 291-19-07'
   }
 
   const post = {
-    href: 'mailto:shopnewyork@cesareattolini.com',
-    text: 'shopnewyork@cesareattolini.com'
+    href: 'mailto:tamerlan-collection@mail.ru',
+    text: 'tamerlan-collection@mail.ru'
   }
 
   const media = {
@@ -14,6 +14,31 @@
     lg: 1080,
     xl: 1430,
   }
+
+  const listMenu = [
+    {
+      text: 'ГАЛЕРЕЯ',
+      href: '#gallery'
+    },
+    {
+      text: 'ИНТЕРНЕТ МАГАЗИН',
+      href: '#e-boutique'
+    },
+    {
+      text: 'beskope',
+      href: '#manufacturing'
+    },
+    {
+      text: 'НАСЛЕДИЕ',
+      href: '#preview'
+    },
+    {
+      text: 'Контакты',
+      href: '#shop'
+    },
+  ]
+
+  const hasPageMain = (main, link) => !!main ? link : `${pages.index.href}${link}`;
 
   const pages = {
     404: {
@@ -48,9 +73,16 @@
 
   const formFilelds = {
     name: {
-      title: 'Введите Ваше имя',
+      title: 'Введите ваше имя',
       attrs: {
-        placeholder: 'Введите Ваше имя',
+        placeholder: 'Введите ваше имя',
+        type: "text",
+      }
+    },
+    city: {
+      title: 'Ваш город',
+      attrs: {
+        placeholder: 'Ваш город',
         type: "text",
       }
     },

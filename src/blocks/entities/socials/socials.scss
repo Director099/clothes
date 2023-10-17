@@ -1,0 +1,13 @@
+.socials {
+  @include ul-none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}

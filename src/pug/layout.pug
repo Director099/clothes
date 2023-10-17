@@ -2,6 +2,7 @@ include mixins.pug
 
 block var
   - const pageMain = false;
+  - const classLayout = null;
 
 doctype html
 html.page(lang='ru')
@@ -43,10 +44,11 @@ html.page(lang='ru')
 
   body.page__body
     +page-header()
-    main.page__content(class=pageMain)
+    main.page__content(class=classLayout)
       block content
         p содержимое страницы
-    //+page-footer()
+      +basket(href="#modal-buy-product" data-fancybox="")
+    +page-footer(pageMain)
     +modal-buy-product
     +sidebar-menu(pageMain)
     block page-bottom

@@ -1,0 +1,19 @@
+.count {
+  //@include ProximaNovaTextRegular12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50px;
+
+  &--pink {
+    color: $white;
+    //background-color: $primary-pink-1;
+  }
+
+  &--danger {
+    color: $white;
+    background-color: red;
+  }
+}

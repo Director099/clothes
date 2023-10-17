@@ -1,0 +1,18 @@
+.navigation__list {
+  @include ul-none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  transition: $time;
+
+  &:hover,
+  &:focus {
+    color: $color-custom-danger;
+  }
+}

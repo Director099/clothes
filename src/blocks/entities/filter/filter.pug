@@ -1,0 +1,16 @@
+-
+  const filterList = [
+    "ОСЕНЬ/ЗИМА",
+    "ВЕСНА/ЛЕТО",
+    "ПИДЖАКИ",
+    "КОСТЮМЫ",
+    "ПАЛЬТО",
+    "КУРТКИ"
+  ]
+
+mixin filter
+  .filter
+    ul.filter__list
+      each item, i in filterList
+        li.filter__item
+          a.filter__link(href="#" class=i === 0 && 'active')= item

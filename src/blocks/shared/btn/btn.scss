@@ -61,55 +61,40 @@ $border-radius:               3px !default;
     }
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
-
-
-
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
-
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
-
   &--gold {
-    color: $color-gold;
-    border-color: $color-gold;
+    color: $color-custom-danger;
+    border-color: $color-custom-danger;
 
     &:hover,
     &:focus {
       color: $white;
-      background-color: $color-gold;
-      border-color: $color-gold;
+      background-color: $color-custom-danger;
+      border-color: $color-custom-danger;
     }
   }
 
   &--bg-gold {
     color: $white;
-    background-color: $color-gold;
-    border-color: $color-gold;
+    background-color: $color-custom-danger;
+    border-color: $color-custom-danger;
 
     &:hover,
     &:focus {
       color: $white;
-      background-color: lighten($color-gold, 10%);
-      border-color: lighten($color-gold, 10%);
+      background-color: lighten($color-custom-danger, 10%);
+      border-color: lighten($color-custom-danger, 10%);
+    }
+  }
+
+  &--border-warning {
+    color: $white;
+    border-color: $color-dark-warning;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: transparent;
+      border-color: lighten($color-dark-warning, 10%);
     }
   }
 

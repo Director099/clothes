@@ -1,12 +1,14 @@
 -
   const listShops = [
     {
-      title: 'MILANO',
-      address: 'Via Bagutta, 14/16 Milano 20121'
+      subtitle: "Шоурум",
+      title: 'МОСКВА',
+      address: 'Москва, ул.Большая Очаковская, дом 47А, строение 1, Бизнес Центр «Очаково»'
     },
     {
-      title: 'NEW YORK',
-      address: '798 Madison Avenue New York NY 10065 USA'
+      subtitle: "Бутик",
+      title: 'УФА',
+      address: 'ул. Чернышевского, 97 , Кировский район'
     }
   ]
 
@@ -14,6 +16,7 @@ mixin shops
   each item, i in listShops
     - const even = i % 2 === 0;
     +shop({
+      subtitle: item.subtitle,
       title: item.title,
       img: i + 1,
       address: item.address

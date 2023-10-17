@@ -1,10 +1,10 @@
-mixin shop({img, title, address})
+mixin shop({img, title, address, subtitle})
   .shop&attributes(attributes)
     .shop__img
       img(src=`img/content/shops-${img}.webp`, alt=title)
     .shop__content
       section.shop__content-wrap
-        span.shop__tag Shop
+        span.shop__tag= subtitle
         h3.shop__title= title
         ul.shop__address
           li.shop__item

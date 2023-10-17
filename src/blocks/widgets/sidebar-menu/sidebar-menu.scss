@@ -8,7 +8,7 @@
   padding: 0;
   display: none;
 
-  background-color: $color-gold;
+  background-color: $color-custom-danger;
   padding-top: 68px;
 
   &.fancybox__content .is-close-btn {
@@ -52,10 +52,10 @@
   font-size: 17px;
   line-height: 27px;
   transition: $time;
-  background-color: $color-gold;
+  background-color: $color-custom-danger;
 
   &:hover {
     color: $white;
-    background-color: #b4984f;
+    background-color: darken($color-custom-danger, 5%);
   }
 }

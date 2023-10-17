@@ -1,0 +1,8 @@
+mixin basket
+  a.basket&attributes(attributes)
+    .basket__tooltip = 146 800 ₽
+    .basket__position
+      .basket__wrap
+        svg.basket__icon(width="40" height="40")
+          use(href="img/symbols.svg#icon-basket")
+      +count(2).basket__count

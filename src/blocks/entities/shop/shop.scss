@@ -11,6 +11,7 @@
 
 .shop__content-wrap {
   padding: 25px;
+  color: $white;
   @media (min-width: $screen-md) {
     padding: 40px 60px;
   }
@@ -54,10 +55,9 @@
   }
 
   .shop__content-wrap {
-    @media (min-width: $screen-md) {
+    //@media (min-width: $screen-md) {
       background-color: rgba($black, 0.92);
-      color: $white;
-    }
+    //}
 
     @media (min-width: $screen-lg) {
       margin-right: 25%;
@@ -84,7 +84,7 @@
   }
 
   .shop__content-wrap {
-    background-color: rgba(157, 132, 84, 0.96);
+    background-color: rgba($color-custom-danger, 0.96);
 
     @media (min-width: $screen-lg) {
       margin-left: 25%;

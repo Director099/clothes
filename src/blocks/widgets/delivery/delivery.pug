@@ -1,0 +1,43 @@
+-
+  const formDelivery = [
+    formFilelds.name,
+    formFilelds.phone,
+    formFilelds.city,
+  ]
+
+mixin delivery
+  .delivery
+    .container.container--ident
+      .grid-tpl-1.grid-tpl-lg-2.delivery__gap
+        .delivery__content
+          h3.delivery__title Доставка товара
+          .delivery__desc
+            p Осуществляется по России и зарубеж. По России доставка транспортной компанией CDEK или почтой России. По Москве и Уфе возможна доставка курьером до двери. Стоимость и сроки доставки рассчитываются индивидуально в зависимости от местонахождения покупателя. Возврат товара составляет 3 дня с момента получения заказа.
+          img.delivery__img(src="img/content/content-6.jpg", alt="Доставка товара")
+        .delivery__content
+          .delivery__content
+            h3.delivery__title Оплата товара
+            .delivery__desc
+              p При заказе товара предоплата осуществляется в 100% размере. Отправка товара покупателю осуществляется в день оплаты. В случае отсутствия в наличии товара, дата отправки согласовывается с покупателем.
+            h4.delivery__title Рассчитайте стоимость #[br] и срок доставки в Ваш город
+            +form(action="404.html" method="POST" data-form).delivery__form.stack.stack--form
+              each item in formDelivery
+                +field-text({
+                  title: item.title,
+                  isTextarea: item.isTextarea,
+                  attrs: {
+                    placeholder: item.attrs.placeholder,
+                    required: true,
+                    type: item.attrs.type ? item.attrs.type : 'text',
+                    minlength: item.attrs.minlength,
+                    min: item.attrs.min,
+                    pattern: item.attrs.pattern,
+                    'data-pristine-required-message': " ",
+                    'data-pristine-minlength-message': item.attrs['data-pristine-minlength-message'],
+                    'data-pristine-min-message': item.attrs['data-pristine-min-message'],
+                    'data-pristine-pattern-message': item.attrs['data-pristine-pattern-message'],
+                    "data-number-only": item.attrs['data-number-only'],
+                    "data-pristine-email-message": item.attrs["data-pristine-email-message"]
+                  }
+                })
+              button.btn.btn--bg-gold(disabled, data-form-btn) Отправить

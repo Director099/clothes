@@ -18,6 +18,19 @@
     background-color: rgba(179, 201, 250, 1);
   }
 
+  &--md-danger {
+    @media (max-width: $screen-md - 1) {
+      .btn {
+        color: $color-custom-danger;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      background-color: rgba($color-custom-danger, 0.4);
+      color: $white;
+    }
+  }
+
   &--dark {
     @media (min-width: $screen-md) {
       background-color: rgba($black, 0.5);
@@ -34,8 +47,9 @@
 .shadow-box--preview-text {
   padding: 30px;
   text-align: left;
-  background-color: rgba(157, 132, 84, 1);
+  background-color: $color-custom-danger;
   max-width: 100%;
+  color: $white;
 
   .shadow-box__title {
     margin-bottom: 16px;
@@ -62,6 +76,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 7px;
+  text-transform: uppercase;
 }
 
 .shadow-box__desc {

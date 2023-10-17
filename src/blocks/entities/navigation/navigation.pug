@@ -1,0 +1,6 @@
+mixin navigation(main)
+  nav.navigation&attributes(attributes)
+    ul.navigation__list
+      each item in listMenu
+        li.navigation__item
+          a.navigation__link(href=hasPageMain(main, item.href) data-smooth-scroll=!!main)= item.text

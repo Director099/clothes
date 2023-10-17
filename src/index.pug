@@ -4,33 +4,36 @@ block meta
   title Главная
 
 block var
-  - const pageMain = "page__content--pt-none";
+  - const classLayout = "page__content--pt-none";
+  - const pageMain = true;
 
 block content
   .stack.stack--main-gap
     +img-content({
-      img: 1,
-      desc: 'Fall Winter 2023-24 <br> Timeless Frames.',
-      title: 'NEW COLLECTION',
+      img: 5,
+      desc: 'Галерея наших работ',
       href: pages.fallWinter.href,
-      classNameBox: 'shadow-box--gray',
-      classBtn: 'btn--warning',
-      btnText: 'Наши последние работы'
-    })#collections
+      classNameBox: 'shadow-box--md-danger',
+      classBtn: 'btn--border-warning',
+      btnText: 'Смотреть'
+    })#gallery
     +collection#e-boutique
     +img-content({
       img: 3,
-      title: 'MANUFACTURING',
-      desc: 'How a Cesare Attolini suit is born.',
+      title: 'Индивидуальный пошив',
+      desc: 'Как рождается одежда в "Устуюгов и сыновья"',
       href: pages.manufacturing.href,
       classNameBox: 'shadow-box--dark',
-      btnText: 'На заказ',
+      btnText: 'bespoke',
     })#manufacturing
     +preview({
-      src: "img/content/content-4.webp",
-      title: "Attolini is a synonym of Naples’ tailoring tradition all around the world.",
-      desc: 'In the past as nowadays, three generations since 1930, it forges exclusive elegance and craftsmanship. Uncompromised expression of an absolute quality, unique culture based on knowhow, untimely personalization and charm. ',
+      src: "img/content/content-4.jpg",
+      title: "\"Ustyugov&Sons\" - это синоним классических традиций, которые передаются с 1992 года.",
+      desc: "Как в прошлом так и по сей день, поколения семьи Устюговых трудятся над созданием одежды сравнимой с произведениями портного искусства. Своим трудом мы воплощаем высочайшее качество из тканей Loro Piana, Dormeuil, Holland & Sherry, Scabal. Приверженность классике и мастерство с которым изготовлена наша одежда, накроют неподражаемым шармом где бы вы ни были.",
       href: pages.history.href,
+      classBtn: 'btn--border-warning',
+      btnText: 'Смотреть'
     })#preview
     +recommended('Новинки')#recommended
     +shops
+    +delivery

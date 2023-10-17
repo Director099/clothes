@@ -1,4 +1,4 @@
-mixin preview({src, title, desc, btnText, href, shadowBox=true})
+mixin preview({src, title, desc, btnText, href, classBtn, shadowBox=true})
   .preview&attributes(attributes)
     a.preview__width-img(href=href)
       img(src=src alt=title)
@@ -10,4 +10,5 @@ mixin preview({src, title, desc, btnText, href, shadowBox=true})
             desc,
             btnText,
             href,
+            classBtn,
           }).shadow-box--preview-text

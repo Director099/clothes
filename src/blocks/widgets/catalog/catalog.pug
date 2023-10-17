@@ -4,6 +4,7 @@ mixin catalog
       +breadcrumbs().product-card__breadcrumbs.d-none.d-md-flex
         +breadcrumbs-item('Главная', 'index.html')
         +breadcrumbs-item('Каталог')
+      +filter
       .grid-tpl-1.grid-tpl-md-3.catalog__gap-products
         each item, i in productList
           +product({

@@ -1,0 +1,23 @@
+-
+  const socials = [
+    {
+      href: '#',
+      icon: 'whatsapp'
+    },
+    {
+      href: '#',
+      icon: 'tg'
+    },
+    {
+      href: 'https://www.instagram.com/ustyugov.sons',
+      icon: 'instagramm'
+    }
+  ]
+
+mixin socials
+  ul.socials
+    each item in socials
+      li.socials__item
+        a.socials__link(href=item.href target="_blank")
+          svg(width="25" height="25")
+            use(href=`img/symbols.svg#icon-${item.icon}`)
