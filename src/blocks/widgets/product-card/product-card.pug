@@ -5,7 +5,7 @@ mixin productHeaderContent(main)
     else
       h2.product-card__title GUS35 A18MA01 R31
     +price("4.600,00 ₽").product-card__price
-    +badge("SOLD OUT")
+    +badge("продано")
 
 mixin product-card
   .product-card
@@ -29,7 +29,7 @@ mixin product-card
                 +share
               .stack.product-card__stack-selected
                 +field-select({
-                  title: 'Size Trousers:',
+                  title: 'РАЗМЕР БРЮК:',
                   attrs: {
                     name: 'size-trousers',
                   },
@@ -43,7 +43,7 @@ mixin product-card
                   ],
                 }).field-select--text-input
                 +field-select({
-                  title: 'Size Suit:',
+                  title: 'РАЗМЕР ПИДЖАКА:',
                   attrs: {
                     name: 'size-suit',
                   },
@@ -58,5 +58,5 @@ mixin product-card
                 }).field-select--text-input
                 a.btn.btn--gold(href="#modal-buy-product" data-fancybox="") Добавить в корзину
         .text-center
-          a.btn(href=pages.catalog.href) back to catalog
-        +recommended('Recommended products')
+          a.btn(href=pages.catalog.href) НАЗАД В КАТАЛОГ
+        +recommended('РЕКОМЕНДУЕМОЕ')
