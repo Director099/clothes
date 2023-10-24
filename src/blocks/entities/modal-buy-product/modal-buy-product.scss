@@ -18,3 +18,15 @@
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }
+
+.modal-buy-product__warning {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto;
+
+  p {
+    margin: 0;
+  }
+}

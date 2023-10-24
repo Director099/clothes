@@ -5,10 +5,16 @@
 
 .page-footer__row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 23px;
+
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__grow {
